@@ -1,0 +1,157 @@
+<section class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="slider1" />
+        <input type="radio" name="radio-btn" id="slider2" />
+        <input type="radio" name="radio-btn" id="slider3" />
+        <input type="radio" name="radio-btn" id="slider4" />
+
+        <div class="slide first">
+          <img
+            src="images/naslovna/naslovna_1.PNG"
+            alt="First image in the slider"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="images/naslovna/naslovna_2.PNG"
+            alt="First image in the slider"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="images/naslovna/naslovna_3.PNG"
+            alt="First image in the slider"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="images/naslovna/naslovna_4.PNG"
+            alt="First image in the slider"
+          />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+
+      <div class="navigation-manual">
+        <label for="slider1" class="manual-btn"></label>
+        <label for="slider2" class="manual-btn"></label>
+        <label for="slider3" class="manual-btn"></label>
+        <label for="slider4" class="manual-btn"></label>
+      </div>
+    </section>
+
+--------------------------------------------------------------------------------------------------
+
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 2em auto 0 auto;
+  box-shadow: var(--bs-images);
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid var(--clr-primary);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: var(--clr-primary);
+}
+
+#slider1:checked ~ .first {
+  margin-left: 0;
+}
+#slider2:checked ~ .first {
+  margin-left: -20%;
+}
+#slider3:checked ~ .first {
+  margin-left: -40%;
+}
+#slider4:checked ~ .first {
+  margin-left: -60%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid var(--clr-primary);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#slider1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: var(--clr-primary);
+}
+#slider2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: var(--clr-primary);
+}
+#slider3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: var(--clr-primary);
+}
+#slider4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: var(--clr-primary);
+}
+
+
+--------------------------------------------------------------------------------
+
+let counter = 1;
+setInterval(() => {
+  document.getElementById("slider" + counter).checked = true;
+  counter++;
+  if (counter > 4) counter = 1;
+}, 7500);

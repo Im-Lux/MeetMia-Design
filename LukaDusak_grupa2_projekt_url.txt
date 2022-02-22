@@ -1,0 +1,35 @@
+Luka Dušak, Grupa 2, Izvanredni računarstvo, 0067554161
+
+Meet Mia, napravljene su stranice:
+	-> Naslovna - home page
+	-> Kategorije - stranica svih kategorija
+	-> Kategorija pojedinačna (Slatko) - stranica slatkih proizvoda
+	-> Proizvod - pojedinačni proizvod
+	-> Kontakt - kontakt forma, informacije
+
+-------------------------------------------------------------------------------------
+
+https://meet-mia.web.app/ 
+https://meet-mia.web.app/index.html ->  NASLOVNA
+
+https://meet-mia.web.app/kategorije.html  ->  KATEGORIJE
+
+https://meet-mia.web.app/slatko.html  ->  KATEGORIJA POJEDINAČNA (SLATKO)
+
+https://meet-mia.web.app/proizvod.html  ->  PROIZVOD
+
+https://meet-mia.web.app/kontakt.html  ->  KONTAKT
+
+
+---------- alternativni linkovi, u slučaju da gornji iz nekog razloga ne rade ----------
+
+https://meet-mia.firebaseapp.com/
+https://meet-mia.firebaseapp.com/index.html  -> NASLOVNA
+
+https://meet-mia.firebaseapp.com/kategorije.html  ->  KATEGORIJE
+
+https://meet-mia.firebaseapp.com/slatko.html  ->  KATEGORIJA POJEDINAČNA (SLATKO)
+
+https://meet-mia.firebaseapp.com/proizvod.html  ->  PROIZVOD
+
+https://meet-mia.firebaseapp.com/kontakt.html  ->  KONTAKT
